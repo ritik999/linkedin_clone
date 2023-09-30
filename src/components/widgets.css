@@ -1,0 +1,39 @@
+.widgets{
+    flex: 0.2;
+    height: fit-content;
+    padding: 10px;
+    position: sticky;
+    top: 80px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.widgets_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.widgets_header > h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.widgets_article{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.widgets_article:hover{
+    background-color: whitesmoke;
+}
+
+.widgets_articleLeft{
+    margin-right: 10px;
+    color: #0177b7;
+}

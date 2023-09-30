@@ -11,7 +11,7 @@ const App = () => {
       <div className="app">
         <Header />
 
-        {!user.displayName ? <Login /> : <Main />}
+        {!user ? <Login /> : <Main />}
       </div>
     </>
   );

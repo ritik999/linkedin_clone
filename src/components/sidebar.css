@@ -3,11 +3,12 @@ p,h1,h2,h3,h4{
 }
 
 .sidebar{
-    position: static;
-    top: 100px;
+    position: sticky;
+    top: 80px;
     flex: 0.2;
     /* text-align: center; */
     height: fit-content;
+    margin-top: 50px;
 }
 
 .sidebar_avatar{

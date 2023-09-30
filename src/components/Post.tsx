@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{forwardRef} from 'react'
 import './post.css'
 import { Avatar } from '@mui/material'
 import InputOption from './InputOption'
@@ -8,15 +8,16 @@ import ShareIcon from '@mui/icons-material/Share';
 import SendIcon from '@mui/icons-material/Send';
 
 
+
 type PropsType={
     name:string,
     description:string,
     message:string,
     photoUrl?:string
 }
-const Post = ({name,description,message,photoUrl}:PropsType) => {
+const Post = forwardRef(({name,description,message,photoUrl}:PropsType,ref:any) => {
   return (
-    <div className="post">
+    <div ref={ref} className="post">
         <div className="post_header">
             <Avatar />
             <div className="post_info">
@@ -37,6 +38,6 @@ const Post = ({name,description,message,photoUrl}:PropsType) => {
         </div>
     </div>
   )
-}
+})
 
 export default Post
